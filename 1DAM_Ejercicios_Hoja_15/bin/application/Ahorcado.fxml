@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="285.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AhorcadoController">
+   <children>
+      <Pane fx:id="_pnAhorcado" layoutX="388.0" layoutY="14.0" prefHeight="200.0" prefWidth="138.0" styleClass="pane" stylesheets="@application.css">
+         <children>
+            <Line fx:id="_figura4" endX="100.0" layoutX="10.0" layoutY="170.0" startX="10.0" styleClass="line" visible="false" />
+            <Line fx:id="_figura3" endX="150.0" layoutX="-40.0" layoutY="100.0" rotate="90.0" startX="10.0" styleClass="line" visible="false" />
+            <Line fx:id="_figura2" endX="65.0" layoutX="30.0" layoutY="30.0" startX="10.0" styleClass="line" visible="false" />
+            <Line fx:id="_figura9" endX="40.0" layoutY="41.0" rotate="135.0" startX="65.0" styleClass="line" visible="false" />
+            <Line fx:id="_figura1" endX="30.0" layoutX="75.0" layoutY="41.0" rotate="90.0" startX="10.0" styleClass="line" visible="false" />
+            <Circle fx:id="_figura10" layoutX="94.0" layoutY="64.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" visible="false">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Line fx:id="_figura5" endX="110.0" layoutX="7.0" layoutY="96.0" rotate="90.0" startX="65.0" styleClass="line" visible="false" />
+            <Line fx:id="_figura8" endX="65.0" layoutX="50.0" layoutY="89.0" startX="30.0" styleClass="line" visible="false" />
+            <Line fx:id="_figura7" endX="40.0" layoutX="33.0" layoutY="125.0" rotate="135.0" startX="60.0" styleClass="line" visible="false" />
+            <Line fx:id="_figura6" endX="40.0" layoutX="56.0" layoutY="125.0" rotate="45.0" startX="60.0" styleClass="line" visible="false" />
+         </children>
+      </Pane>
+      <Pane layoutX="10.0" layoutY="221.0" prefHeight="50.0" prefWidth="516.0" styleClass="pane" stylesheets="@application.css">
+         <children>
+            <Button fx:id="_btJugar" layoutX="387.0" layoutY="10.0" mnemonicParsing="false" onAction="#onActionJugar" prefHeight="31.0" prefWidth="119.0" text="Jugar" />
+            <PasswordField fx:id="_pfFrase" layoutX="14.0" layoutY="10.0" prefHeight="31.0" prefWidth="358.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="157.0" prefHeight="50.0" prefWidth="358.0" styleClass="pane" stylesheets="@../../bin/application/application.css">
+         <children>
+            <Label fx:id="_lbFrase" alignment="CENTER" layoutX="14.0" layoutY="15.0" prefHeight="21.0" prefWidth="330.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Courier New Bold" size="18.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane fx:id="_pnLetras" layoutX="11.0" layoutY="14.0" prefHeight="145.0" prefWidth="364.0">
+         <children>
+            <Button disable="true" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onActionLetra" text="A" />
+            <Button disable="true" layoutX="51.0" layoutY="14.0" mnemonicParsing="false" onAction="#onActionLetra" text="B" />
+            <Button disable="true" layoutX="93.0" layoutY="14.0" mnemonicParsing="false" onAction="#onActionLetra" text="C" />
+            <Button disable="true" layoutX="131.0" layoutY="14.0" mnemonicParsing="false" onAction="#onActionLetra" text="D" />
+            <Button disable="true" layoutX="168.0" layoutY="14.0" mnemonicParsing="false" onAction="#onActionLetra" text="E" />
+            <Button disable="true" layoutX="204.0" layoutY="14.0" mnemonicParsing="false" onAction="#onActionLetra" text="F" />
+            <Button disable="true" layoutX="244.0" layoutY="14.0" mnemonicParsing="false" onAction="#onActionLetra" text="G" />
+            <Button disable="true" layoutX="284.0" layoutY="14.0" mnemonicParsing="false" onAction="#onActionLetra" text="H" />
+            <Button disable="true" layoutX="323.0" layoutY="14.0" mnemonicParsing="false" onAction="#onActionLetra" text="I" />
+            <Button disable="true" layoutX="323.0" layoutY="60.0" mnemonicParsing="false" onAction="#onActionLetra" text="Q" />
+            <Button disable="true" layoutX="284.0" layoutY="60.0" mnemonicParsing="false" onAction="#onActionLetra" text="P" />
+            <Button disable="true" layoutX="244.0" layoutY="60.0" mnemonicParsing="false" onAction="#onActionLetra" text="O" />
+            <Button disable="true" layoutX="204.0" layoutY="60.0" mnemonicParsing="false" onAction="#onActionLetra" text="Ñ" />
+            <Button disable="true" layoutX="168.0" layoutY="60.0" mnemonicParsing="false" onAction="#onActionLetra" text="N" />
+            <Button disable="true" layoutX="131.0" layoutY="60.0" mnemonicParsing="false" onAction="#onActionLetra" text="M" />
+            <Button disable="true" layoutX="93.0" layoutY="60.0" mnemonicParsing="false" onAction="#onActionLetra" text="L" />
+            <Button disable="true" layoutX="51.0" layoutY="60.0" mnemonicParsing="false" onAction="#onActionLetra" text="K" />
+            <Button disable="true" layoutX="14.0" layoutY="60.0" mnemonicParsing="false" onAction="#onActionLetra" text="J" />
+            <Button disable="true" layoutX="323.0" layoutY="104.0" mnemonicParsing="false" onAction="#onActionLetra" text="Z" />
+            <Button disable="true" layoutX="284.0" layoutY="104.0" mnemonicParsing="false" onAction="#onActionLetra" text="Y" />
+            <Button disable="true" layoutX="244.0" layoutY="104.0" mnemonicParsing="false" onAction="#onActionLetra" text="X" />
+            <Button disable="true" layoutX="204.0" layoutY="104.0" mnemonicParsing="false" onAction="#onActionLetra" text="W" />
+            <Button disable="true" layoutX="168.0" layoutY="104.0" mnemonicParsing="false" onAction="#onActionLetra" text="V" />
+            <Button disable="true" layoutX="131.0" layoutY="104.0" mnemonicParsing="false" onAction="#onActionLetra" text="U" />
+            <Button disable="true" layoutX="93.0" layoutY="104.0" mnemonicParsing="false" onAction="#onActionLetra" text="T" />
+            <Button disable="true" layoutX="51.0" layoutY="104.0" mnemonicParsing="false" onAction="#onActionLetra" text="S" />
+            <Button disable="true" layoutX="14.0" layoutY="104.0" mnemonicParsing="false" onAction="#onActionLetra" text="R" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

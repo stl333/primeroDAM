@@ -1,0 +1,10 @@
+.pane {
+	-fx-border-color: rgb(0,128,128)  ;
+	-fx-border-width: 3.0px ;
+	-fx-border-radius: 10px;
+	-fx-background-color: rgb(192,192,192) ;
+	-fx-background-radius: 10px;
+}
+.line {
+	-fx-stroke-width: 5px;
+}

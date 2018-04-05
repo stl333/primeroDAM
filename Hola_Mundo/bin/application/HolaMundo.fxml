@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="196.0" prefWidth="278.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HolaMundoController">
+   <children>
+      <Label fx:id="lbHolaMundo" alignment="CENTER" layoutX="36.0" layoutY="38.0" prefHeight="47.0" prefWidth="208.0" textAlignment="CENTER">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="btOk" layoutX="71.0" layoutY="103.0" mnemonicParsing="false" onAction="#onActionOk" prefHeight="25.0" prefWidth="137.0" text="Ok" />
+      <Button fx:id="btBorrar" layoutX="71.0" layoutY="135.0" mnemonicParsing="false" onAction="#onActionBorrar" prefHeight="25.0" prefWidth="137.0" text="Borrar" />
+   </children>
+</AnchorPane>
